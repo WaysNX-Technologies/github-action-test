@@ -19,7 +19,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "."
-        target: "/your/website/directory"
+        target: "/var/www/html/github-action-test"
  
     - name: Executing remote command
       uses: appleboy/ssh-action@master
